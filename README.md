@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ConstructHub.ai
+
+ConstructHub.ai is a next-gen full-stack web application for construction project planning and management with AI-powered features.
+
+## Features
+
+- **Modern UI/UX with Animations**: Built with Next.js, Tailwind CSS, Framer Motion, and GSAP for a stunning user experience.
+- **Robust Authentication**: User and admin authentication with Clerk, including email verification via Mailjet.
+- **Project Management**: Create and manage construction projects with detailed information.
+- **AI Integration**: Generate floor plans using Hugging Face AI models.
+- **Real-time Suggestions**: Get material and professional recommendations based on project details.
+- **Admin Dashboard**: Comprehensive admin panel for user and project management.
+
+## Tech Stack
+
+- **Frontend**: Next.js, React 18, Tailwind CSS, Framer Motion, GSAP
+- **Authentication**: Clerk
+- **Database**: MongoDB
+- **Email**: Mailjet
+- **AI**: Groq API & Gemini2.0 Flash API 
+- **UI Components**: Shadcn UI
+- **Notifications**: Sonner
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 18+ and npm
+- MongoDB Atlas account
+- Clerk account
+- Mailjet account
+- Hugging Face account
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/constructhub.git
+   cd constructhub
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. Set up environment variables:
+   - Copy `.env.local.example` to `.env.local`
+   - Fill in your API keys and credentials
 
-To learn more about Next.js, take a look at the following resources:
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+- `src/app/(home)`: Home page and landing components
+- `src/app/(auth)`: Authentication pages (sign-in, sign-up, verification)
+- `src/app/(dashboard)`: User and admin dashboard pages
+- `src/app/api`: API routes for backend functionality
+- `src/components`: Reusable UI components
+- `src/lib/db`: Database models and connection
+- `src/lib/services`: Service integrations (Mailjet, etc.)
+- `src/lib/utils`: Utility functions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The application can be easily deployed on Vercel:
+
+1. Push your code to a GitHub repository
+2. Import the repository in Vercel
+3. Set up the environment variables
+4. Deploy
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgements
+
+- [Next.js](https://nextjs.org/)
+- [Clerk](https://clerk.dev/)
+- [MongoDB](https://www.mongodb.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Shadcn UI](https://ui.shadcn.com/)
+- [Hugging Face](https://huggingface.co/)

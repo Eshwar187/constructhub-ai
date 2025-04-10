@@ -1,0 +1,320 @@
+{
+  "overall_theme": "Modern and Calming with a touch of Nature",
+  "rooms": [
+    {
+      "room_type": "living_room",
+      "color_options": [
+        {
+          "name": "Creamy Beige",
+          "brand": "Asian Paints",
+          "code": "AP-W1010",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        },
+        {
+          "name": "Light Gray",
+          "brand": "Dulux",
+          "code": "DU-LG-101",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b920-28"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Nerolac",
+          "code": "NL-WB-10",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-22"
+        }
+      ],
+      "techniques": "None",
+      "maintenance": "Regular dusting and occasional wiping with a damp cloth"
+    },
+    {
+      "room_type": "dining_room",
+      "color_options": [
+        {
+          "name": "Soft Cream",
+          "brand": "Berger Paints",
+          "code": "BP-SC-10",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        },
+        {
+          "name": "Light Taupe",
+          "brand": "Asian Paints",
+          "code": "AP-LT-1010",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-22"
+        },
+        {
+          "name": "Warm White",
+          "brand": "Dulux",
+          "code": "DU-WW-101",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b920-28"
+        }
+      ],
+      "techniques": "None",
+      "maintenance": "Regular dusting and occasional wiping with a damp cloth"
+    },
+    {
+      "room_type": "kitchen",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Nerolac",
+          "code": "NL-CW-10",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b925-35"
+        },
+        {
+          "name": "Soft Gray",
+          "brand": "Berger Paints",
+          "code": "BP-SG-10",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-25"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Asian Paints",
+          "code": "AP-WB-1010",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b920-28"
+        }
+      ],
+      "techniques": "Use a semi-gloss or high-gloss finish to make cleaning easier",
+      "maintenance": "Regular cleaning with a mild detergent and water"
+    },
+    {
+      "room_type": "bedroom",
+      "color_options": [
+        {
+          "name": "Soft Blue",
+          "brand": "Dulux",
+          "code": "DU-SB-101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-25"
+        },
+        {
+          "name": "Light Green",
+          "brand": "Nerolac",
+          "code": "NL-LG-10",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b915-22"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Berger Paints",
+          "code": "BP-WB-10",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-25"
+        }
+      ],
+      "techniques": "None",
+      "maintenance": "Regular dusting and occasional wiping with a damp cloth"
+    },
+    {
+      "room_type": "bedroom 2",
+      "color_options": [
+        {
+          "name": "Soft Pink",
+          "brand": "Asian Paints",
+          "code": "AP-SP-1010",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-22"
+        },
+        {
+          "name": "Light Yellow",
+          "brand": "Berger Paints",
+          "code": "BP-LY-10",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        },
+        {
+          "name": "Warm Gray",
+          "brand": "Dulux",
+          "code": "DU-WG-101",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b920-28"
+        }
+      ],
+      "techniques": "None",
+      "maintenance": "Regular dusting and occasional wiping with a damp cloth"
+    },
+    {
+      "room_type": "bedroom 3",
+      "color_options": [
+        {
+          "name": "Soft Lavender",
+          "brand": "Nerolac",
+          "code": "NL-SL-10",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-22"
+        },
+        {
+          "name": "Light Blue",
+          "brand": "Berger Paints",
+          "code": "BP-LB-10",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Asian Paints",
+          "code": "AP-WB-1010",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-25"
+        }
+      ],
+      "techniques": "None",
+      "maintenance": "Regular dusting and occasional wiping with a damp cloth"
+    },
+    {
+      "room_type": "bathroom",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Dulux",
+          "code": "DU-CW-101",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b925-35"
+        },
+        {
+          "name": "Soft Gray",
+          "brand": "Nerolac",
+          "code": "NL-SG-10",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-25"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Berger Paints",
+          "code": "BP-WB-10",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b920-28"
+        }
+      ],
+      "techniques": "Use a semi-gloss or high-gloss finish to make cleaning easier",
+      "maintenance": "Regular cleaning with a mild detergent and water"
+    },
+    {
+      "room_type": "closet",
+      "color_options": [
+        {
+          "name": "Soft White",
+          "brand": "Asian Paints",
+          "code": "AP-SW-1010",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-22"
+        },
+        {
+          "name": "Light Gray",
+          "brand": "Dulux",
+          "code": "DU-LG-101",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b918-25"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Nerolac",
+          "code": "NL-WB-10",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        }
+      ],
+      "techniques": "None",
+      "maintenance": "Regular dusting and occasional wiping with a damp cloth"
+    },
+    {
+      "room_type": "hallway",
+      "color_options": [
+        {
+          "name": "Soft Cream",
+          "brand": "Berger Paints",
+          "code": "BP-SC-10",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        },
+        {
+          "name": "Light Gray",
+          "brand": "Dulux",
+          "code": "DU-LG-101",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b920-28"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Asian Paints",
+          "code": "AP-WB-1010",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-22"
+        }
+      ],
+      "techniques": "None",
+      "maintenance": "Regular dusting and occasional wiping with a damp cloth"
+    },
+    {
+      "room_type": "garage",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Nerolac",
+          "code": "NL-CW-10",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b925-35"
+        },
+        {
+          "name": "Light Gray",
+          "brand": "Dulux",
+          "code": "DU-LG-101",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b920-28"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Berger Paints",
+          "code": "BP-WB-10",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        }
+      ],
+      "techniques": "Use a semi-gloss or high-gloss finish to make cleaning easier",
+      "maintenance": "Regular cleaning with a mild detergent and water"
+    },
+    {
+      "room_type": "patio",
+      "color_options": [
+        {
+          "name": "Soft Brown",
+          "brand": "Asian Paints",
+          "code": "AP-SB-1010",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-22"
+        },
+        {
+          "name": "Light Gray",
+          "brand": "Dulux",
+          "code": "DU-LG-101",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b918-25"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Nerolac",
+          "code": "NL-WB-10",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        }
+      ],
+      "techniques": "None",
+      "maintenance": "Regular dusting and occasional wiping with a damp cloth"
+    }
+  ],
+  "tips": [
+    "Always choose a paint that is suitable for the specific room type and usage",
+    "Consider the natural light and ventilation of the room while selecting the paint color",
+    "Use a primer before painting to ensure better adhesion and durability",
+    "Clean the walls thoroughly before painting to remove dirt, grime, and grease",
+    "Apply two coats of paint for optimal coverage and color consistency"
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "overall_theme": "Modern and Calming with a touch of Nature",
+  "rooms": [
+    {
+      "room_type": "living_room",
+      "color_options": [
+        {
+          "name": "Creamy Beige",
+          "brand": "Dulux",
+          "code": "DULUX-005",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        },
+        {
+          "name": "Light Gray",
+          "brand": "Asian Paints",
+          "code": "AP-G1040",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        }
+      ],
+      "techniques": "Use a roller to create a subtle texture on the walls",
+      "maintenance": "Dust regularly with a soft cloth to maintain the finish"
+    },
+    {
+      "room_type": "kitchen",
+      "color_options": [
+        {
+          "name": "Fresh Mint",
+          "brand": "Nerolac",
+          "code": "NEROLAC-1234",
+          "finish": "Glossy",
+          "cost_per_sqft": "\u20b920-28"
+        },
+        {
+          "name": "Warm White",
+          "brand": "Berger",
+          "code": "BERGER-WW01",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        }
+      ],
+      "techniques": "Use a semi-gloss paint to make cleaning easier",
+      "maintenance": "Clean spills immediately to prevent stains"
+    },
+    {
+      "room_type": "bedroom",
+      "color_options": [
+        {
+          "name": "Soft Sage",
+          "brand": "Asian Paints",
+          "code": "AP-S1040",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Calming Blue",
+          "brand": "Dulux",
+          "code": "DULUX-007",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        }
+      ],
+      "techniques": "Use a paint with a built-in primer to save time",
+      "maintenance": "Vacuum regularly to prevent dust buildup"
+    },
+    {
+      "room_type": "bathroom",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Nerolac",
+          "code": "NEROLAC-1001",
+          "finish": "Glossy",
+          "cost_per_sqft": "\u20b920-28"
+        },
+        {
+          "name": "Soothing Gray",
+          "brand": "Berger",
+          "code": "BERGER-SG01",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        }
+      ],
+      "techniques": "Use a mold- and mildew-resistant paint",
+      "maintenance": "Clean regularly with a disinfectant to prevent mold growth"
+    },
+    {
+      "room_type": "bedroom 2",
+      "color_options": [
+        {
+          "name": "Pale Lavender",
+          "brand": "Asian Paints",
+          "code": "AP-PL101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Soft Peach",
+          "brand": "Dulux",
+          "code": "DULUX-009",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        }
+      ],
+      "techniques": "Use a paint with a built-in primer to save time",
+      "maintenance": "Vacuum regularly to prevent dust buildup"
+    },
+    {
+      "room_type": "bedroom 3",
+      "color_options": [
+        {
+          "name": "Minty Fresh",
+          "brand": "Nerolac",
+          "code": "NEROLAC-1235",
+          "finish": "Glossy",
+          "cost_per_sqft": "\u20b920-28"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Berger",
+          "code": "BERGER-WB01",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        }
+      ],
+      "techniques": "Use a paint with a built-in primer to save time",
+      "maintenance": "Vacuum regularly to prevent dust buildup"
+    },
+    {
+      "room_type": "bathroom 2",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Nerolac",
+          "code": "NEROLAC-1001",
+          "finish": "Glossy",
+          "cost_per_sqft": "\u20b920-28"
+        },
+        {
+          "name": "Soothing Gray",
+          "brand": "Berger",
+          "code": "BERGER-SG01",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        }
+      ],
+      "techniques": "Use a mold- and mildew-resistant paint",
+      "maintenance": "Clean regularly with a disinfectant to prevent mold growth"
+    },
+    {
+      "room_type": "office",
+      "color_options": [
+        {
+          "name": "Professional Gray",
+          "brand": "Dulux",
+          "code": "DULUX-008",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Berger",
+          "code": "BERGER-WB01",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        }
+      ],
+      "techniques": "Use a paint with a built-in primer to save time",
+      "maintenance": "Dust regularly with a soft cloth to maintain the finish"
+    },
+    {
+      "room_type": "hallway",
+      "color_options": [
+        {
+          "name": "Creamy Beige",
+          "brand": "Dulux",
+          "code": "DULUX-005",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        },
+        {
+          "name": "Light Gray",
+          "brand": "Asian Paints",
+          "code": "AP-G1040",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        }
+      ],
+      "techniques": "Use a roller to create a subtle texture on the walls",
+      "maintenance": "Dust regularly with a soft cloth to maintain the finish"
+    },
+    {
+      "room_type": "garage",
+      "color_options": [
+        {
+          "name": "Industrial Gray",
+          "brand": "Nerolac",
+          "code": "NEROLAC-IG01",
+          "finish": "Glossy",
+          "cost_per_sqft": "\u20b920-28"
+        },
+        {
+          "name": "Durable White",
+          "brand": "Berger",
+          "code": "BERGER-DW01",
+          "finish": "Glossy",
+          "cost_per_sqft": "\u20b920-28"
+        }
+      ],
+      "techniques": "Use a paint specifically designed for garage walls",
+      "maintenance": "Clean regularly with a degreaser to prevent stains"
+    },
+    {
+      "room_type": "entrance",
+      "color_options": [
+        {
+          "name": "Welcoming Beige",
+          "brand": "Dulux",
+          "code": "DULUX-006",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-25"
+        },
+        {
+          "name": "Inviting Gray",
+          "brand": "Asian Paints",
+          "code": "AP-IG101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        }
+      ],
+      "techniques": "Use a paint with a built-in primer to save time",
+      "maintenance": "Dust regularly with a soft cloth to maintain the finish"
+    },
+    {
+      "room_type": "patio",
+      "color_options": [
+        {
+          "name": "Outdoor Gray",
+          "brand": "Nerolac",
+          "code": "NEROLAC-OG01",
+          "finish": "Glossy",
+          "cost_per_sqft": "\u20b920-28"
+        },
+        {
+          "name": "Weathered Wood",
+          "brand": "Berger",
+          "code": "BERGER-WW02",
+          "finish": "Glossy",
+          "cost_per_sqft": "\u20b920-28"
+        }
+      ],
+      "techniques": "Use a paint specifically designed for outdoor use",
+      "maintenance": "Clean regularly with a pressure washer to prevent dirt buildup"
+    }
+  ],
+  "tips": [
+    "Always choose a paint that is suitable for the specific room and its usage",
+    "Prepare the surface properly before painting to ensure a smooth finish",
+    "Use a primer to ensure better adhesion and coverage",
+    "Apply two coats of paint for optimal results"
+  ]
+}
