@@ -8,14 +8,19 @@ import { ThemeProvider } from '@/components/theme/ThemeProvider';
 import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 
+// Use display: 'swap' to prevent font loading issues during deployment
 const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
+  display: 'swap',
+  fallback: ['system-ui', 'Arial', 'sans-serif'],
 });
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
+  display: 'swap',
+  fallback: ['monospace'],
 });
 
 export const metadata: Metadata = {

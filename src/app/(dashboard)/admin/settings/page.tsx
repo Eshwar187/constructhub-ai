@@ -12,7 +12,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 export default function AdminSettingsPage() {
   const [activeTab, setActiveTab] = useState('general');
   const [isLoading, setIsLoading] = useState(false);
-  
+
   // General settings
   const [generalSettings, setGeneralSettings] = useState({
     siteName: 'ConstructHub.ai',
@@ -30,8 +30,8 @@ export default function AdminSettingsPage() {
 
   // API settings
   const [apiSettings, setApiSettings] = useState({
-    huggingfaceApiKey: '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',
-    mongodbUri: 'mongodb+srv://eshwar2005:Eshwar123@cluster0.1zjx9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
+    huggingfaceApiKey: process.env.NEXT_PUBLIC_HUGGINGFACE_API_KEY || '••••••••••••••••••••••••••••••••',
+    mongodbUri: process.env.MONGODB_URI || '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••',
   });
 
   const handleGeneralChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -60,7 +60,7 @@ export default function AdminSettingsPage() {
 
   const saveSettings = (settingType: string) => {
     setIsLoading(true);
-    
+
     // Simulate API call
     setTimeout(() => {
       setIsLoading(false);
@@ -90,7 +90,7 @@ export default function AdminSettingsPage() {
             <TabsTrigger value="email">Email</TabsTrigger>
             <TabsTrigger value="api">API Keys</TabsTrigger>
           </TabsList>
-          
+
           <TabsContent value="general" className="mt-6">
             <Card className="bg-gray-800 border-gray-700">
               <CardHeader>
@@ -110,7 +110,7 @@ export default function AdminSettingsPage() {
                     className="bg-gray-700 border-gray-600 text-white mt-1"
                   />
                 </div>
-                
+
                 <div>
                   <Label htmlFor="siteDescription">Site Description</Label>
                   <Input
@@ -121,7 +121,7 @@ export default function AdminSettingsPage() {
                     className="bg-gray-700 border-gray-600 text-white mt-1"
                   />
                 </div>
-                
+
                 <div>
                   <Label htmlFor="contactEmail">Contact Email</Label>
                   <Input
@@ -135,7 +135,7 @@ export default function AdminSettingsPage() {
                 </div>
               </CardContent>
               <CardFooter>
-                <Button 
+                <Button
                   onClick={() => saveSettings('General')}
                   disabled={isLoading}
                   className="bg-blue-600 hover:bg-blue-700"
@@ -145,7 +145,7 @@ export default function AdminSettingsPage() {
               </CardFooter>
             </Card>
           </TabsContent>
-          
+
           <TabsContent value="email" className="mt-6">
             <Card className="bg-gray-800 border-gray-700">
               <CardHeader>
@@ -166,7 +166,7 @@ export default function AdminSettingsPage() {
                     className="bg-gray-700 border-gray-600 text-white mt-1"
                   />
                 </div>
-                
+
                 <div>
                   <Label htmlFor="mailjetApiSecret">Mailjet API Secret</Label>
                   <Input
@@ -178,7 +178,7 @@ export default function AdminSettingsPage() {
                     className="bg-gray-700 border-gray-600 text-white mt-1"
                   />
                 </div>
-                
+
                 <div>
                   <Label htmlFor="fromEmail">From Email</Label>
                   <Input
@@ -190,7 +190,7 @@ export default function AdminSettingsPage() {
                     className="bg-gray-700 border-gray-600 text-white mt-1"
                   />
                 </div>
-                
+
                 <div>
                   <Label htmlFor="fromName">From Name</Label>
                   <Input
@@ -203,7 +203,7 @@ export default function AdminSettingsPage() {
                 </div>
               </CardContent>
               <CardFooter>
-                <Button 
+                <Button
                   onClick={() => saveSettings('Email')}
                   disabled={isLoading}
                   className="bg-blue-600 hover:bg-blue-700"
@@ -213,7 +213,7 @@ export default function AdminSettingsPage() {
               </CardFooter>
             </Card>
           </TabsContent>
-          
+
           <TabsContent value="api" className="mt-6">
             <Card className="bg-gray-800 border-gray-700">
               <CardHeader>
@@ -234,7 +234,7 @@ export default function AdminSettingsPage() {
                     className="bg-gray-700 border-gray-600 text-white mt-1"
                   />
                 </div>
-                
+
                 <div>
                   <Label htmlFor="mongodbUri">MongoDB URI</Label>
                   <Input
@@ -248,7 +248,7 @@ export default function AdminSettingsPage() {
                 </div>
               </CardContent>
               <CardFooter>
-                <Button 
+                <Button
                   onClick={() => saveSettings('API')}
                   disabled={isLoading}
                   className="bg-blue-600 hover:bg-blue-700"
