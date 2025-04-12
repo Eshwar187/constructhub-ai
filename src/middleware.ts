@@ -1,6 +1,22 @@
 import { authMiddleware } from '@clerk/nextjs';
+import { NextRequest, NextResponse } from 'next/server';
+import { handleClerkRedirects } from './middleware-utils';
 
-export default authMiddleware({
+// Create a custom middleware function that first checks for Clerk redirects
+const customMiddleware = (req: NextRequest) => {
+  // Check if we need to handle a Clerk redirect
+  const redirectResponse = handleClerkRedirects(req);
+  if (redirectResponse) {
+    return redirectResponse;
+  }
+
+  // Otherwise, proceed with Clerk's auth middleware
+  return authMiddleware({
+    // Custom function to handle requests
+    beforeAuth: (req) => {
+      // You can add additional logic here if needed
+      return NextResponse.next();
+    },
   // Disable session persistence to require login after server reset
   sessionOptions: {
     sessionDuration: 1800, // 30 minutes
@@ -50,7 +66,11 @@ export default authMiddleware({
   ignoredRoutes: [
     '/api/webhook',
   ],
-});
+  })(req);
+};
+
+// Export the custom middleware
+export default customMiddleware;
 
 export const config = {
   matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)'],

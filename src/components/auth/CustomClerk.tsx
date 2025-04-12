@@ -19,18 +19,29 @@ export function ClerkRedirectHandler() {
     if (!isLoaded) return;
 
     // Check if we're on a sign-in related page that should be skipped
-    const isAuthPage = window.location.pathname.includes('/sign-in') || 
+    const isAuthPage = window.location.pathname.includes('/sign-in') ||
                        window.location.pathname.includes('/sign-up') ||
                        window.location.pathname.includes('/verification');
-    
+
     // Skip redirection on auth pages
     if (isAuthPage) return;
 
-    // Check if we're on the factor-one page
+    // Check if we're on the factor-one page or have a Clerk DB JWT parameter
     const isFactorOnePage = window.location.pathname.includes('/factor-one');
-    
-    // If we're on the factor-one page and signed in, redirect to the dashboard
-    if (isFactorOnePage && isSignedIn) {
+    const hasClerkDbJwt = window.location.search.includes('__clerk_db_jwt');
+
+    // If we're on the factor-one page or have a Clerk DB JWT parameter and are signed in, redirect to the dashboard
+    if ((isFactorOnePage || hasClerkDbJwt) && isSignedIn) {
+      handleRedirect();
+    }
+
+    // If we're on the root page with a Clerk DB JWT parameter, we need to redirect
+    if (window.location.pathname === '/' && hasClerkDbJwt && isSignedIn) {
+      // Remove the JWT parameter from the URL without reloading the page
+      const cleanUrl = window.location.origin + window.location.pathname;
+      window.history.replaceState({}, document.title, cleanUrl);
+
+      // Redirect to the appropriate dashboard
       handleRedirect();
     }
   }, [isLoaded, isSignedIn, router]);
@@ -46,21 +57,21 @@ export function ClerkRedirectHandler() {
 
       // Fetch the appropriate redirect URL from the API
       const response = await fetch('/api/auth/redirect');
-      
+
       if (response.ok) {
         const data = await response.json();
-        // Redirect to the appropriate URL
-        router.push(data.redirectUrl);
+        // Redirect to the appropriate URL using replace to prevent back button issues
+        router.replace(data.redirectUrl);
       } else {
         // If there's an error, redirect to the default dashboard
         console.error('Failed to get redirect URL');
         toast.error('Failed to determine your dashboard. Redirecting to default...');
-        router.push('/dashboard');
+        router.replace('/dashboard');
       }
     } catch (error) {
       console.error('Error during redirect:', error);
       toast.error('An error occurred during redirection');
-      router.push('/dashboard');
+      router.replace('/dashboard');
     }
   };
 
