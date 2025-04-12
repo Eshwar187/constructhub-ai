@@ -13,8 +13,8 @@ const execAsync = promisify(exec);
 // Function to generate floor plan blueprint image using the Python script with Gemini-enhanced blueprint generator
 async function generateFloorPlan(projectId: string, prompt: string) {
   try {
-    // Get the absolute path to the script
-    const scriptPath = path.join(process.cwd(), 'scripts', 'generate_floor_plan.py');
+    // Get the absolute path to the wrapper script
+    const scriptPath = path.join(process.cwd(), 'scripts', 'run_floor_plan.py');
 
     // Escape the prompt for command line usage
     const escapedPrompt = prompt.replace(/"/g, '\\"');

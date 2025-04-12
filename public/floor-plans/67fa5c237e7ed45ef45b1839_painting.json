@@ -1,0 +1,262 @@
+{
+  "overall_theme": "Soft, calming, and natural colors to bring in plenty of natural light and ventilation",
+  "rooms": [
+    {
+      "room_type": "bedroom (master)",
+      "color_options": [
+        {
+          "name": "Soft Mint",
+          "brand": "Asian Paints",
+          "code": "AP-S2030",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Creamy White",
+          "brand": "Berger Paints",
+          "code": "BP-1010",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Light Grey",
+          "brand": "Dulux Paints",
+          "code": "DLX-5001",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a subtle texture finish to add depth to the room",
+      "maintenance": "Dust regularly with a soft cloth to maintain the matte finish"
+    },
+    {
+      "room_type": "bedroom 2",
+      "color_options": [
+        {
+          "name": "Pale Yellow",
+          "brand": "Nerolac Paints",
+          "code": "NP-1020",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b912-15"
+        },
+        {
+          "name": "Soft Peach",
+          "brand": "Asian Paints",
+          "code": "AP-S2050",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Misty Blue",
+          "brand": "Dulux Paints",
+          "code": "DLX-5010",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a single accent wall in a contrasting color to add visual interest",
+      "maintenance": "Clean stains immediately to prevent them from setting in"
+    },
+    {
+      "room_type": "bedroom 3",
+      "color_options": [
+        {
+          "name": "Light Lavender",
+          "brand": "Berger Paints",
+          "code": "BP-1030",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Soft Sage",
+          "brand": "Nerolac Paints",
+          "code": "NP-1050",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b912-15"
+        },
+        {
+          "name": "Creamy Beige",
+          "brand": "Asian Paints",
+          "code": "AP-S2010",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        }
+      ],
+      "techniques": "Use a combination of matte and eggshell finishes to add texture and depth",
+      "maintenance": "Avoid using harsh chemicals or abrasive cleaners to maintain the finish"
+    },
+    {
+      "room_type": "living room",
+      "color_options": [
+        {
+          "name": "Warm Beige",
+          "brand": "Dulux Paints",
+          "code": "DLX-6001",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Soft Cream",
+          "brand": "Berger Paints",
+          "code": "BP-1015",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Light Grey",
+          "brand": "Asian Paints",
+          "code": "AP-S5001",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        }
+      ],
+      "techniques": "Use a statement wall in a bold, contrasting color to add visual interest",
+      "maintenance": "Dust regularly with a soft cloth to maintain the finish and prevent stains"
+    },
+    {
+      "room_type": "dining area",
+      "color_options": [
+        {
+          "name": "Soft Sage",
+          "brand": "Nerolac Paints",
+          "code": "NP-1050",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b912-15"
+        },
+        {
+          "name": "Creamy White",
+          "brand": "Berger Paints",
+          "code": "BP-1010",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Light Grey",
+          "brand": "Dulux Paints",
+          "code": "DLX-5001",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a subtle texture finish to add depth to the room",
+      "maintenance": "Clean stains immediately to prevent them from setting in"
+    },
+    {
+      "room_type": "kitchen",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Asian Paints",
+          "code": "AP-S1010",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b925-30"
+        },
+        {
+          "name": "Soft Grey",
+          "brand": "Berger Paints",
+          "code": "BP-1025",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Dulux Paints",
+          "code": "DLX-6001",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a high-gloss finish to make the kitchen look brighter and more spacious",
+      "maintenance": "Clean regularly with a mild detergent to maintain the gloss finish"
+    },
+    {
+      "room_type": "utility",
+      "color_options": [
+        {
+          "name": "Soft Grey",
+          "brand": "Berger Paints",
+          "code": "BP-1025",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Creamy White",
+          "brand": "Asian Paints",
+          "code": "AP-S1010",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Light Beige",
+          "brand": "Dulux Paints",
+          "code": "DLX-5005",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a simple, matte finish to keep the utility area looking clean and functional",
+      "maintenance": "Dust regularly with a soft cloth to maintain the finish and prevent stains"
+    },
+    {
+      "room_type": "common bathroom 1",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Asian Paints",
+          "code": "AP-S1010",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b925-30"
+        },
+        {
+          "name": "Soft Grey",
+          "brand": "Berger Paints",
+          "code": "BP-1025",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Dulux Paints",
+          "code": "DLX-6001",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a high-gloss finish to make the bathroom look brighter and more spacious",
+      "maintenance": "Clean regularly with a mild detergent to maintain the gloss finish"
+    },
+    {
+      "room_type": "common bathroom 2",
+      "color_options": [
+        {
+          "name": "Soft Sage",
+          "brand": "Nerolac Paints",
+          "code": "NP-1050",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b912-15"
+        },
+        {
+          "name": "Creamy White",
+          "brand": "Berger Paints",
+          "code": "BP-1010",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Light Grey",
+          "brand": "Dulux Paints",
+          "code": "DLX-5001",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a subtle texture finish to add depth to the bathroom",
+      "maintenance": "Clean stains immediately to prevent them from setting in"
+    }
+  ],
+  "tips": [
+    "Always choose a paint that is suitable for the specific room's conditions (e.g., moisture-resistant for bathrooms)",
+    "Consider the natural light and ventilation in each room when selecting colors",
+    "Use a primer to ensure better adhesion and durability of the paint"
+  ]
+}

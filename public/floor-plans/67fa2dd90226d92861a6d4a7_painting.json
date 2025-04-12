@@ -1,0 +1,290 @@
+{
+  "overall_theme": "Modern Urban Oasis with a blend of calming neutrals and soft pastels",
+  "rooms": [
+    {
+      "room_type": "Living Room",
+      "color_options": [
+        {
+          "name": "Creamy Beige",
+          "brand": "Asian Paints",
+          "code": "AP-2153",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Soft Gray",
+          "brand": "Berger Paints",
+          "code": "BP-4020",
+          "finish": "Silk",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Dulux",
+          "code": "DLX-1022",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a subtle texture finish to add depth to the walls",
+      "maintenance": "Dust walls regularly to maintain the matte finish"
+    },
+    {
+      "room_type": "Dining Area",
+      "color_options": [
+        {
+          "name": "Soft Sage",
+          "brand": "Asian Paints",
+          "code": "AP-S1064",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Cream",
+          "brand": "Nerolac",
+          "code": "NL-1010",
+          "finish": "Silk",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Light Gray",
+          "brand": "Valspar",
+          "code": "VS-5010",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a subtle sheen finish to reflect light and enhance the ambiance",
+      "maintenance": "Clean walls gently with a damp cloth to maintain the finish"
+    },
+    {
+      "room_type": "Kitchen",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Asian Paints",
+          "code": "AP-W1010",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Soft Cream",
+          "brand": "Berger Paints",
+          "code": "BP-1015",
+          "finish": "Silk",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Light Gray",
+          "brand": "Dulux",
+          "code": "DLX-5010",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a high-gloss finish to make the kitchen look clean and modern",
+      "maintenance": "Clean walls regularly with a gentle cleanser to maintain the gloss finish"
+    },
+    {
+      "room_type": "Bedroom",
+      "color_options": [
+        {
+          "name": "Soft Peach",
+          "brand": "Asian Paints",
+          "code": "AP-S1055",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Light Lavender",
+          "brand": "Berger Paints",
+          "code": "BP-4025",
+          "finish": "Silk",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Dulux",
+          "code": "DLX-1025",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a subtle texture finish to add depth to the walls",
+      "maintenance": "Dust walls regularly to maintain the matte finish"
+    },
+    {
+      "room_type": "Bedroom 2",
+      "color_options": [
+        {
+          "name": "Soft Mint",
+          "brand": "Asian Paints",
+          "code": "AP-S1060",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Light Blue",
+          "brand": "Nerolac",
+          "code": "NL-1015",
+          "finish": "Silk",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Warm Gray",
+          "brand": "Valspar",
+          "code": "VS-5020",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a subtle sheen finish to reflect light and enhance the ambiance",
+      "maintenance": "Clean walls gently with a damp cloth to maintain the finish"
+    },
+    {
+      "room_type": "Bedroom 3",
+      "color_options": [
+        {
+          "name": "Soft Yellow",
+          "brand": "Asian Paints",
+          "code": "AP-S1052",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Light Green",
+          "brand": "Berger Paints",
+          "code": "BP-4030",
+          "finish": "Silk",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Dulux",
+          "code": "DLX-1028",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a subtle texture finish to add depth to the walls",
+      "maintenance": "Dust walls regularly to maintain the matte finish"
+    },
+    {
+      "room_type": "Bathroom",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Asian Paints",
+          "code": "AP-W1010",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Soft Gray",
+          "brand": "Berger Paints",
+          "code": "BP-4020",
+          "finish": "Silk",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Light Blue",
+          "brand": "Dulux",
+          "code": "DLX-5015",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a high-gloss finish to make the bathroom look clean and modern",
+      "maintenance": "Clean walls regularly with a gentle cleanser to maintain the gloss finish"
+    },
+    {
+      "room_type": "Common Bathroom",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Asian Paints",
+          "code": "AP-W1010",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Soft Gray",
+          "brand": "Berger Paints",
+          "code": "BP-4020",
+          "finish": "Silk",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Light Blue",
+          "brand": "Dulux",
+          "code": "DLX-5015",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a high-gloss finish to make the bathroom look clean and modern",
+      "maintenance": "Clean walls regularly with a gentle cleanser to maintain the gloss finish"
+    },
+    {
+      "room_type": "Porch",
+      "color_options": [
+        {
+          "name": "Warm Beige",
+          "brand": "Asian Paints",
+          "code": "AP-2155",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Soft Gray",
+          "brand": "Berger Paints",
+          "code": "BP-4025",
+          "finish": "Silk",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Light Brown",
+          "brand": "Dulux",
+          "code": "DLX-1020",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a subtle texture finish to add depth to the walls",
+      "maintenance": "Dust walls regularly to maintain the matte finish"
+    },
+    {
+      "room_type": "Parking",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Asian Paints",
+          "code": "AP-W1010",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Soft Gray",
+          "brand": "Berger Paints",
+          "code": "BP-4020",
+          "finish": "Silk",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Light Blue",
+          "brand": "Dulux",
+          "code": "DLX-5015",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a high-gloss finish to make the parking area look clean and modern",
+      "maintenance": "Clean walls regularly with a gentle cleanser to maintain the gloss finish"
+    }
+  ],
+  "tips": [
+    "Always prime the walls before painting to ensure a smooth finish",
+    "Use a paint with a built-in primer to save time and money",
+    "Choose a paint with a low VOC (volatile organic compound) to ensure better indoor air quality"
+  ]
+}

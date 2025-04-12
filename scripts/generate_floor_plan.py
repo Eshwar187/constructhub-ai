@@ -7,9 +7,15 @@ import math
 import random
 import re
 import requests
+import locale
+import codecs
 from PIL import Image, ImageDraw, ImageFont
 from dotenv import load_dotenv
 import google.generativeai as genai
+
+# Fix console encoding issues on Windows
+sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer)
+sys.stderr = codecs.getwriter('utf-8')(sys.stderr.buffer)
 
 # Load environment variables from .env.local
 load_dotenv('.env.local')
@@ -31,6 +37,9 @@ if not GROQ_API_KEY:
 def get_painting_recommendations_from_groq(floor_plan_specs, description):
     """Use Groq API to get painting and color recommendations for each room"""
     print("Getting painting and color recommendations from Groq...")
+
+    # Replace problematic Unicode characters with ASCII equivalents
+    description = description.replace('₹', 'Rs.')
 
     if not GROQ_API_KEY:
         print("Skipping painting recommendations - GROQ_API_KEY not found")
@@ -146,6 +155,9 @@ def get_painting_recommendations_from_groq(floor_plan_specs, description):
 def get_floor_plan_details_from_gemini(description):
     """Use Gemini to analyze the description and extract detailed floor plan specifications"""
     print("Analyzing description with Gemini to extract detailed floor plan specifications...")
+
+    # Replace problematic Unicode characters with ASCII equivalents
+    description = description.replace('₹', 'Rs.')
 
     try:
         # Create a prompt for Gemini to extract detailed floor plan information
@@ -867,85 +879,8 @@ def generate_floor_plan_image(description):
 
                 print(f"Added room: {room_name} at grid position ({row},{col}) spanning {rowspan}x{colspan} cells")
 
-        # COMPLETELY REPLACE the rooms with a new set of rooms that have fixed positions
-        # This guarantees no overlaps regardless of the house area or complexity
-
-        # Extract room names from the original rooms
-        room_names = []
-        room_features = {}
-        room_types = {}
-
-        for room in rooms:
-            if 'name' in room:
-                name = room['name']
-                room_names.append(name)
-                if 'features' in room:
-                    room_features[name] = room['features']
-                if 'type' in room:
-                    room_types[name] = room['type']
-
-        # Create a new set of rooms with fixed positions
-        new_rooms = []
-
-        # Define fixed positions that are guaranteed not to overlap
-        fixed_positions = [
-            # Row 1 - positions are extremely far apart
-            {'x': 100,  'y': 100,  'width': 80, 'height': 80},
-            {'x': 400, 'y': 100,  'width': 80, 'height': 80},
-            {'x': 700, 'y': 100,  'width': 80, 'height': 80},
-            {'x': 1000, 'y': 100,  'width': 80, 'height': 80},
-
-            # Row 2 - positions are extremely far apart
-            {'x': 100,  'y': 300, 'width': 80, 'height': 80},
-            {'x': 400, 'y': 300, 'width': 80, 'height': 80},
-            {'x': 700, 'y': 300, 'width': 80, 'height': 80},
-            {'x': 1000, 'y': 300, 'width': 80, 'height': 80},
-
-            # Row 3 - positions are extremely far apart
-            {'x': 100,  'y': 500, 'width': 80, 'height': 80},
-            {'x': 400, 'y': 500, 'width': 80, 'height': 80},
-            {'x': 700, 'y': 500, 'width': 80, 'height': 80},
-            {'x': 1000, 'y': 500, 'width': 80, 'height': 80},
-
-            # Row 4 - positions are extremely far apart
-            {'x': 100,  'y': 700, 'width': 80, 'height': 80},
-            {'x': 400, 'y': 700, 'width': 80, 'height': 80},
-            {'x': 700, 'y': 700, 'width': 80, 'height': 80},
-            {'x': 1000, 'y': 700, 'width': 80, 'height': 80},
-        ]
-
-        # Place rooms using fixed positions
-        for i, name in enumerate(room_names):
-            if i >= len(fixed_positions):
-                # Skip if we have more rooms than positions
-                print(f"WARNING: Too many rooms, skipping {name}")
-                continue
-
-            # Get the fixed position for this room
-            position = fixed_positions[i]
-
-            # Create new room with fixed position
-            new_room = {
-                'name': name,
-                'x': position['x'],
-                'y': position['y'],
-                'width': position['width'],
-                'height': position['height']
-            }
-
-            # Add features if available
-            if name in room_features:
-                new_room['features'] = room_features[name]
-
-            # Add type if available
-            if name in room_types:
-                new_room['type'] = room_types[name]
-
-            new_rooms.append(new_room)
-            print(f"Placed {name} at FIXED position ({position['x']}, {position['y']}) with 100% guaranteed separation")
-
-        # Replace the original rooms with the new rooms
-        rooms = new_rooms
+        # Use the prevent_room_overlaps function to ensure no overlaps
+        rooms = prevent_room_overlaps(rooms, house_x, house_y, pixel_width, pixel_height)
         print("SUCCESS: Fixed position layout applied with 100% guaranteed NO overlaps")
 
         # Draw all rooms
@@ -1263,6 +1198,9 @@ def generate_floor_plan_image(description):
     """Generate a floor plan image with proper room placement"""
     print("Generating floor plan image with enhanced blueprint generator...")
 
+    # Replace problematic Unicode characters with ASCII equivalents
+    description = description.replace('₹', 'Rs.')
+
     try:
         floor_plan_specs = get_floor_plan_details_from_gemini(description)
         description = description.lower()
@@ -1408,6 +1346,9 @@ def generate_floor_plan_image(description):
             if has_garage:
                 place_room("GARAGE", *room_sizes['garage'])
 
+        # Apply the prevent_room_overlaps function to ensure no overlaps
+        rooms = prevent_room_overlaps(rooms, house_x, house_y, pixel_width, pixel_height)
+
         # Draw rooms
         for room in rooms:
             draw.rectangle([room['x'], room['y'], room['x'] + room['width'],
@@ -1518,85 +1459,69 @@ def save_results(project_id, description, image_data, painting_recommendations=N
     return output_file, image_file
 
 def prevent_room_overlaps(rooms, house_x=0, house_y=0, pixel_width=0, pixel_height=0):
-    """Create a completely new layout with FIXED ABSOLUTE positions to guarantee no overlaps"""
-    print("Creating FIXED ABSOLUTE POSITION layout with 100% guaranteed no overlaps")
+    """Create a completely new layout with FIXED positions to guarantee no overlaps"""
+    print("Creating FIXED POSITION layout with 100% guaranteed no overlaps")
 
-    # COMPLETELY IGNORE the input rooms and create a new layout from scratch
-    # with fixed absolute positions that are guaranteed not to overlap
-
-    # Extract room names from input rooms
+    # Extract room names and properties from input rooms
     room_names = []
+    room_properties = {}
+
     for room in rooms:
         if 'name' in room:
-            room_names.append(room['name'])
+            name = room['name']
+            room_names.append(name)
+            # Store all properties except position and size
+            room_properties[name] = {k: v for k, v in room.items() if k not in ['x', 'y', 'width', 'height']}
         else:
-            room_names.append(f"ROOM {len(room_names)+1}")
+            name = f"ROOM {len(room_names)+1}"
+            room_names.append(name)
+            room_properties[name] = {}
 
-    # Create a new list of rooms with fixed absolute positions
+    # Create a new list of rooms with fixed positions
     new_rooms = []
 
-    # Define FIXED ABSOLUTE positions that are guaranteed not to overlap
-    # These positions are completely independent of the house area
-    # and have enormous separation between them
-    fixed_absolute_positions = [
-        # Position 1
-        {'x': 100,  'y': 100,  'width': 100, 'height': 100},
-        # Position 2
-        {'x': 1000, 'y': 100,  'width': 100, 'height': 100},
-        # Position 3
-        {'x': 100,  'y': 1000, 'width': 100, 'height': 100},
-        # Position 4
-        {'x': 1000, 'y': 1000, 'width': 100, 'height': 100},
+    # Calculate grid layout based on house dimensions
+    # Use a grid layout that fits within the house boundaries
+    cols = 3  # Number of columns in the grid
+    rows = (len(room_names) + cols - 1) // cols  # Number of rows needed
 
-        # Position 5
-        {'x': 550,  'y': 100,  'width': 100, 'height': 100},
-        # Position 6
-        {'x': 100,  'y': 550,  'width': 100, 'height': 100},
-        # Position 7
-        {'x': 1000, 'y': 550,  'width': 100, 'height': 100},
-        # Position 8
-        {'x': 550,  'y': 1000, 'width': 100, 'height': 100},
-        # Position 9
-        {'x': 550,  'y': 550,  'width': 100, 'height': 100},
+    # Calculate cell dimensions with margins
+    margin = 20  # Margin between rooms in pixels
+    cell_width = (pixel_width - (margin * (cols + 1))) / cols
+    cell_height = (pixel_height - (margin * (rows + 1))) / rows
 
-        # Position 10
-        {'x': 100,  'y': 1450, 'width': 100, 'height': 100},
-        # Position 11
-        {'x': 550,  'y': 1450, 'width': 100, 'height': 100},
-        # Position 12
-        {'x': 1000, 'y': 1450, 'width': 100, 'height': 100},
-    ]
+    # Ensure minimum cell size
+    cell_width = max(cell_width, 80)
+    cell_height = max(cell_height, 80)
 
-    # Place rooms using fixed absolute positions
+    # Place rooms in a grid layout
     for i, room_name in enumerate(room_names):
-        if i >= len(fixed_absolute_positions):
-            # Skip if we have more rooms than positions
-            print(f"WARNING: Too many rooms, skipping {room_name}")
-            continue
+        # Calculate grid position
+        row = i // cols
+        col = i % cols
 
-        # Get the fixed absolute position for this room
-        position = fixed_absolute_positions[i]
+        # Calculate room position with margins
+        x = house_x + margin + col * (cell_width + margin)
+        y = house_y + margin + row * (cell_height + margin)
 
-        # Create new room with fixed absolute position
+        # Create new room with grid position
         new_room = {
             'name': room_name,
-            'x': position['x'],
-            'y': position['y'],
-            'width': position['width'],
-            'height': position['height']
+            'x': x,
+            'y': y,
+            'width': cell_width,
+            'height': cell_height
         }
 
-        # Copy additional properties from original room
-        for original_room in rooms:
-            if original_room.get('name', '') == room_name:
-                for key, value in original_room.items():
-                    if key not in ['x', 'y', 'width', 'height', 'name']:
-                        new_room[key] = value
+        # Add properties from original room
+        if room_name in room_properties:
+            for key, value in room_properties[room_name].items():
+                new_room[key] = value
 
         new_rooms.append(new_room)
-        print(f"Placed {room_name} at FIXED ABSOLUTE position ({position['x']}, {position['y']}) with 100% guaranteed separation")
+        print(f"Placed {room_name} at grid position ({row},{col}) with coordinates ({x},{y})")
 
-    print("SUCCESS: Fixed absolute position layout applied with 100% guaranteed NO overlaps")
+    print("SUCCESS: Grid layout applied with 100% guaranteed NO overlaps")
     return new_rooms
 
 def main():
@@ -1607,7 +1532,15 @@ def main():
 
     project_id = sys.argv[1]
     description = sys.argv[2]
-    print(f"Using description: {description}")
+
+    # Handle Unicode characters in the description
+    try:
+        # Replace problematic characters with their ASCII equivalents
+        description = description.replace('₹', 'Rs.')
+        print(f"Using description: {description}")
+    except UnicodeEncodeError:
+        # If there's still an encoding error, print a simplified message
+        print("Using provided description (contains special characters)")
 
     # Variable to store painting recommendations
     painting_recommendations = None
