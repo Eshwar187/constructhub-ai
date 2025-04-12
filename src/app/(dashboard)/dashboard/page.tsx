@@ -33,6 +33,15 @@ export default function DashboardPage(): React.ReactElement {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    // Check if there's a Clerk DB JWT parameter in the URL
+    const hasClerkDbJwt = window.location.search.includes('__clerk_db_jwt');
+
+    if (hasClerkDbJwt) {
+      // Clean the URL by removing the JWT parameter
+      const cleanUrl = window.location.origin + window.location.pathname;
+      window.history.replaceState({}, document.title, cleanUrl);
+    }
+
     const fetchProjects = async () => {
       try {
         const response = await fetch('/api/projects');

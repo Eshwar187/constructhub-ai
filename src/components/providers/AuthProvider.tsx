@@ -4,6 +4,7 @@ import React from 'react';
 import { ClerkProvider } from '@clerk/nextjs';
 import { MockClerkProvider } from '@/lib/clerk-mock';
 import { UserSyncProvider } from "./UserSyncProvider";
+import { customNavigate } from '@/lib/clerk-config';
 
 // Check if we're using mock auth
 const useMockAuth = process.env.NEXT_PUBLIC_USE_MOCK_AUTH === 'true' ||
@@ -32,13 +33,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           privacyPageUrl: "https://clerk.com/privacy",
         },
       }}
-      // Configure routing
+      // Configure routing with absolute URLs for production
       signInUrl="/sign-in"
       signUpUrl="/sign-up"
-      afterSignInUrl="/auth-redirect"
+      afterSignInUrl="/dashboard"
       afterSignUpUrl="/verification"
-      // Disable multi-factor authentication redirects
-      signInMode="redirect"
+      // Use our custom navigation handler to prevent unwanted redirects
+      navigate={customNavigate}
 
     >
       <UserSyncProvider>

@@ -30,8 +30,9 @@ export default function RedirectPage() {
           window.history.replaceState({}, document.title, cleanUrl);
         }
 
-        // Fetch the appropriate redirect URL from the API
-        const response = await fetch('/api/auth/redirect');
+        // Fetch the appropriate redirect URL from the API using absolute URL
+        const apiUrl = `${process.env.NEXT_PUBLIC_APP_URL || window.location.origin}/api/auth/redirect`;
+        const response = await fetch(apiUrl);
 
         if (response.ok) {
           const data = await response.json();
@@ -70,7 +71,7 @@ export default function RedirectPage() {
             <h1 className="text-2xl font-bold mb-2">Redirection failed</h1>
             <p className="text-gray-400 mb-4">Unable to determine your dashboard</p>
             <button
-              onClick={() => router.push('/dashboard')}
+              onClick={() => router.replace(`${process.env.NEXT_PUBLIC_APP_URL || window.location.origin}/dashboard`)}
               className="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-md transition-colors"
             >
               Go to Dashboard

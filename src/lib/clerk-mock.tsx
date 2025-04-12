@@ -104,24 +104,8 @@ export function SignIn({ redirectUrl }: { redirectUrl?: string }) {
     // Simulate API call delay
     setTimeout(async () => {
       try {
-        // Check if we should use the redirect API
-        if (redirectUrl === '/auth-redirect') {
-          // Fetch the appropriate redirect URL from the API
-          const response = await fetch('/api/auth/redirect');
-
-          if (response.ok) {
-            const data = await response.json();
-            // Redirect to the appropriate URL based on user role
-            window.location.href = data.redirectUrl;
-          } else {
-            // If there's an error, redirect to the default dashboard
-            console.error('Failed to get redirect URL');
-            window.location.href = '/dashboard';
-          }
-        } else if (redirectUrl) {
-          // Use the specified redirect URL
-          window.location.href = redirectUrl;
-        }
+        // Always redirect directly to dashboard to avoid JWT issues
+        window.location.href = '/dashboard';
       } catch (error) {
         console.error('Error during redirect:', error);
         window.location.href = '/dashboard';

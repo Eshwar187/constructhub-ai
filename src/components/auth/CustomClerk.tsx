@@ -35,8 +35,8 @@ export function ClerkRedirectHandler() {
       handleRedirect();
     }
 
-    // If we're on the root page with a Clerk DB JWT parameter, we need to redirect
-    if (window.location.pathname === '/' && hasClerkDbJwt && isSignedIn) {
+    // If we have a Clerk DB JWT parameter, we need to redirect
+    if (hasClerkDbJwt && isSignedIn) {
       // Remove the JWT parameter from the URL without reloading the page
       const cleanUrl = window.location.origin + window.location.pathname;
       window.history.replaceState({}, document.title, cleanUrl);
@@ -55,8 +55,9 @@ export function ClerkRedirectHandler() {
       const token = await getToken();
       if (!token) return;
 
-      // Fetch the appropriate redirect URL from the API
-      const response = await fetch('/api/auth/redirect');
+      // Fetch the appropriate redirect URL from the API using absolute URL
+      const apiUrl = `${process.env.NEXT_PUBLIC_APP_URL || window.location.origin}/api/auth/redirect`;
+      const response = await fetch(apiUrl);
 
       if (response.ok) {
         const data = await response.json();

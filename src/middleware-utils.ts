@@ -7,23 +7,23 @@ import { NextRequest, NextResponse } from 'next/server';
  */
 export function handleClerkRedirects(req: NextRequest): NextResponse | undefined {
   const url = req.nextUrl.clone();
-  
+
   // Check if the URL has a Clerk DB JWT parameter
   if (url.searchParams.has('__clerk_db_jwt')) {
-    // If we're on the root path, redirect to the auth-redirect page
-    if (url.pathname === '/') {
-      // Create a new URL for the auth-redirect page
-      const redirectUrl = new URL('/auth-redirect', url.origin);
-      
-      // Copy all search parameters
-      url.searchParams.forEach((value, key) => {
-        redirectUrl.searchParams.set(key, value);
-      });
-      
-      // Return a redirect response
-      return NextResponse.redirect(redirectUrl);
-    }
+    // Create a clean URL without the JWT parameter
+    const cleanUrl = new URL('/dashboard', url.origin);
+
+    // Return a redirect response directly to the dashboard
+    return NextResponse.redirect(cleanUrl);
   }
-  
+
+  // Check if we're being redirected to localhost from Clerk
+  const referer = req.headers.get('referer') || '';
+  if (referer.includes('accounts.dev') && url.pathname === '/') {
+    // Redirect to dashboard
+    const dashboardUrl = new URL('/dashboard', url.origin);
+    return NextResponse.redirect(dashboardUrl);
+  }
+
   return undefined;
 }
