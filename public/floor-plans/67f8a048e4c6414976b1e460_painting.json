@@ -1,0 +1,318 @@
+{
+  "overall_theme": "Earthy and Calming with a touch of Modernity",
+  "rooms": [
+    {
+      "room_type": "living_room",
+      "color_options": [
+        {
+          "name": "Soft Cream",
+          "brand": "Asian Paints",
+          "code": "AP-S1010",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Berger Paints",
+          "code": "BP-215",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-19"
+        },
+        {
+          "name": "Light Gray",
+          "brand": "Dulux",
+          "code": "DLX-104",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b925-30"
+        }
+      ],
+      "techniques": "Add a textured finish to one accent wall to create visual interest",
+      "maintenance": "Dust regularly with a soft cloth to maintain the matte finish"
+    },
+    {
+      "room_type": "dining_area",
+      "color_options": [
+        {
+          "name": "Creamy White",
+          "brand": "Nippon Paints",
+          "code": "NP-101",
+          "finish": "Satin",
+          "cost_per_sqft": "\u20b912-16"
+        },
+        {
+          "name": "Soft Peach",
+          "brand": "Kansai Nerolac",
+          "code": "KN-205",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Warm Ivory",
+          "brand": "Valspar",
+          "code": "VAL-102",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a semi-gloss finish on the ceiling to reflect light",
+      "maintenance": "Clean any stains immediately to prevent them from setting"
+    },
+    {
+      "room_type": "kitchen",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Asian Paints",
+          "code": "AP-S1001",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Soft Gray",
+          "brand": "Berger Paints",
+          "code": "BP-210",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Creamy Beige",
+          "brand": "Dulux",
+          "code": "DLX-105",
+          "finish": "Satin",
+          "cost_per_sqft": "\u20b925-30"
+        }
+      ],
+      "techniques": "Use a high-gloss finish on the kitchen cabinets to make them easy to clean",
+      "maintenance": "Clean the kitchen walls regularly to prevent grease buildup"
+    },
+    {
+      "room_type": "utility_area",
+      "color_options": [
+        {
+          "name": "Clean White",
+          "brand": "Nippon Paints",
+          "code": "NP-100",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b910-15"
+        },
+        {
+          "name": "Light Gray",
+          "brand": "Kansai Nerolac",
+          "code": "KN-200",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b912-18"
+        },
+        {
+          "name": "Soft Blue",
+          "brand": "Valspar",
+          "code": "VAL-103",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b918-23"
+        }
+      ],
+      "techniques": "Use a semi-gloss finish on the utility area walls to make them easy to clean",
+      "maintenance": "Clean the utility area regularly to prevent dust buildup"
+    },
+    {
+      "room_type": "bedroom",
+      "color_options": [
+        {
+          "name": "Soft Pink",
+          "brand": "Asian Paints",
+          "code": "AP-S1020",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Berger Paints",
+          "code": "BP-215",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Light Lavender",
+          "brand": "Dulux",
+          "code": "DLX-106",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b925-30"
+        }
+      ],
+      "techniques": "Add a textured finish to one accent wall to create visual interest",
+      "maintenance": "Dust regularly with a soft cloth to maintain the matte finish"
+    },
+    {
+      "room_type": "bathroom",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Nippon Paints",
+          "code": "NP-100",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Soft Gray",
+          "brand": "Kansai Nerolac",
+          "code": "KN-200",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Seafoam Green",
+          "brand": "Valspar",
+          "code": "VAL-104",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b925-30"
+        }
+      ],
+      "techniques": "Use a high-gloss finish on the bathroom walls to make them easy to clean",
+      "maintenance": "Clean the bathroom walls regularly to prevent soap scum buildup"
+    },
+    {
+      "room_type": "bedroom 2",
+      "color_options": [
+        {
+          "name": "Soft Yellow",
+          "brand": "Asian Paints",
+          "code": "AP-S1030",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Warm Cream",
+          "brand": "Berger Paints",
+          "code": "BP-220",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Light Peach",
+          "brand": "Dulux",
+          "code": "DLX-107",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b925-30"
+        }
+      ],
+      "techniques": "Add a textured finish to one accent wall to create visual interest",
+      "maintenance": "Dust regularly with a soft cloth to maintain the matte finish"
+    },
+    {
+      "room_type": "bedroom 3",
+      "color_options": [
+        {
+          "name": "Soft Blue",
+          "brand": "Nippon Paints",
+          "code": "NP-102",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b912-16"
+        },
+        {
+          "name": "Warm Gray",
+          "brand": "Kansai Nerolac",
+          "code": "KN-210",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Light Green",
+          "brand": "Valspar",
+          "code": "VAL-105",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Add a textured finish to one accent wall to create visual interest",
+      "maintenance": "Dust regularly with a soft cloth to maintain the matte finish"
+    },
+    {
+      "room_type": "bathroom 2",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Asian Paints",
+          "code": "AP-S1001",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Soft Gray",
+          "brand": "Berger Paints",
+          "code": "BP-210",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Seafoam Green",
+          "brand": "Dulux",
+          "code": "DLX-104",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b925-30"
+        }
+      ],
+      "techniques": "Use a high-gloss finish on the bathroom walls to make them easy to clean",
+      "maintenance": "Clean the bathroom walls regularly to prevent soap scum buildup"
+    },
+    {
+      "room_type": "outdoor",
+      "color_options": [
+        {
+          "name": "Weathered Wood",
+          "brand": "Asian Paints",
+          "code": "AP-S1055",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b925-30"
+        },
+        {
+          "name": "Earth Brown",
+          "brand": "Berger Paints",
+          "code": "BP-230",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Forest Green",
+          "brand": "Dulux",
+          "code": "DLX-108",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b930-35"
+        }
+      ],
+      "techniques": "Use a weather-resistant finish to protect the outdoor walls from the elements",
+      "maintenance": "Clean the outdoor walls regularly to prevent dirt buildup"
+    },
+    {
+      "room_type": "parking",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Nippon Paints",
+          "code": "NP-100",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Light Gray",
+          "brand": "Kansai Nerolac",
+          "code": "KN-200",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Dark Gray",
+          "brand": "Valspar",
+          "code": "VAL-106",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b925-30"
+        }
+      ],
+      "techniques": "Use a high-gloss finish on the parking walls to make them easy to clean",
+      "maintenance": "Clean the parking walls regularly to prevent oil stains"
+    }
+  ],
+  "tips": [
+    "Always prime the walls before painting to ensure better adhesion and coverage",
+    "Use a paint with a low VOC (Volatile Organic Compound) to ensure better indoor air quality",
+    "Clean the walls regularly to maintain the paint finish and prevent dirt buildup"
+  ]
+}

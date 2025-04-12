@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+// Remove Google Fonts dependency to fix deployment issues
+// import { Inter, JetBrains_Mono } from "next/font/google";
 import { AuthProvider } from '@/components/providers/AuthProvider';
 import { DatabaseProvider } from '@/components/providers/DatabaseProvider';
 import { DatabaseInitializer } from '@/components/providers/DatabaseInitializer';
@@ -8,20 +9,11 @@ import { ThemeProvider } from '@/components/theme/ThemeProvider';
 import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 
-// Use display: 'swap' to prevent font loading issues during deployment
-const inter = Inter({
-  variable: "--font-sans",
-  subsets: ["latin"],
-  display: 'swap',
-  fallback: ['system-ui', 'Arial', 'sans-serif'],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
-  display: 'swap',
-  fallback: ['monospace'],
-});
+// Define CSS variables for fonts without using Google Fonts
+// This ensures the app will work even if Google Fonts is unavailable
+const fontVariables = {
+  variable: "--font-sans --font-mono",
+};
 
 export const metadata: Metadata = {
   title: "ConstructHub.ai - Next-Gen Construction Management",
@@ -36,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} antialiased min-h-screen bg-background text-foreground`}
+        className={`${fontVariables.variable} antialiased min-h-screen bg-background text-foreground`}
       >
         <ThemeProvider defaultTheme="light">
           <AuthProvider>

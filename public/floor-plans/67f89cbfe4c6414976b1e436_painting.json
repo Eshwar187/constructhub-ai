@@ -1,0 +1,283 @@
+{
+  "overall_theme": "A harmonious blend of warm and cool tones, inspired by Chennai's climate and cultural heritage",
+  "rooms": [
+    {
+      "room_type": "living_room",
+      "color_options": [
+        {
+          "name": "Warm Beige",
+          "brand": "Asian Paints",
+          "code": "AP-2153",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Creamy White",
+          "brand": "Nerolac",
+          "code": "NPW-101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b912-15"
+        }
+      ],
+      "techniques": "Use a textured finish on one accent wall to add depth and visual interest",
+      "maintenance": "Dust regularly with a soft cloth to maintain the finish"
+    },
+    {
+      "room_type": "dining_area",
+      "color_options": [
+        {
+          "name": "Soft Sage",
+          "brand": "Dulux",
+          "code": "DLX-324",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Warm Cream",
+          "brand": "Berger",
+          "code": "BE-102",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-18"
+        }
+      ],
+      "techniques": "Use a subtle stencil design on one wall to add visual interest",
+      "maintenance": "Clean spills immediately to prevent stains"
+    },
+    {
+      "room_type": "kitchen",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Asian Paints",
+          "code": "AP-101",
+          "finish": "High-Gloss",
+          "cost_per_sqft": "\u20b925-30"
+        },
+        {
+          "name": "Soft Gray",
+          "brand": "Nerolac",
+          "code": "NP-301",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        }
+      ],
+      "techniques": "Use a high-gloss finish on cabinets and a matte finish on walls",
+      "maintenance": "Clean regularly with a mild detergent to maintain the finish"
+    },
+    {
+      "room_type": "utility_area",
+      "color_options": [
+        {
+          "name": "Durable White",
+          "brand": "Berger",
+          "code": "BE-201",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b910-12"
+        },
+        {
+          "name": "Functional Gray",
+          "brand": "Dulux",
+          "code": "DLX-102",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b915-18"
+        }
+      ],
+      "techniques": "Use a durable, low-sheen finish to withstand heavy use",
+      "maintenance": "Clean regularly with a mild detergent to maintain the finish"
+    },
+    {
+      "room_type": "bedroom",
+      "color_options": [
+        {
+          "name": "Soft Peach",
+          "brand": "Asian Paints",
+          "code": "AP-2053",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Calming Blue",
+          "brand": "Nerolac",
+          "code": "NPB-101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b912-15"
+        }
+      ],
+      "techniques": "Use a soft, calming color to promote relaxation",
+      "maintenance": "Dust regularly with a soft cloth to maintain the finish"
+    },
+    {
+      "room_type": "bathroom",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Asian Paints",
+          "code": "AP-101",
+          "finish": "High-Gloss",
+          "cost_per_sqft": "\u20b925-30"
+        },
+        {
+          "name": "Fresh Mint",
+          "brand": "Dulux",
+          "code": "DLX-422",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a high-gloss finish on fixtures and a matte finish on walls",
+      "maintenance": "Clean regularly with a mild detergent to maintain the finish"
+    },
+    {
+      "room_type": "master_bedroom",
+      "color_options": [
+        {
+          "name": "Rich Walnut",
+          "brand": "Berger",
+          "code": "BE-401",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Soft Sage",
+          "brand": "Dulux",
+          "code": "DLX-324",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a rich, warm color to create a cozy atmosphere",
+      "maintenance": "Dust regularly with a soft cloth to maintain the finish"
+    },
+    {
+      "room_type": "attached_bathroom",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Asian Paints",
+          "code": "AP-101",
+          "finish": "High-Gloss",
+          "cost_per_sqft": "\u20b925-30"
+        },
+        {
+          "name": "Soft Gray",
+          "brand": "Nerolac",
+          "code": "NP-301",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        }
+      ],
+      "techniques": "Use a high-gloss finish on fixtures and a matte finish on walls",
+      "maintenance": "Clean regularly with a mild detergent to maintain the finish"
+    },
+    {
+      "room_type": "bedroom_3",
+      "color_options": [
+        {
+          "name": "Vibrant Yellow",
+          "brand": "Dulux",
+          "code": "DLX-621",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Soft Pink",
+          "brand": "Berger",
+          "code": "BE-202",
+          "finish": "Soft Sheen",
+          "cost_per_sqft": "\u20b918-22"
+        }
+      ],
+      "techniques": "Use a bright, cheerful color to create a lively atmosphere",
+      "maintenance": "Dust regularly with a soft cloth to maintain the finish"
+    },
+    {
+      "room_type": "hallway",
+      "color_options": [
+        {
+          "name": "Neutral Beige",
+          "brand": "Asian Paints",
+          "code": "AP-2153",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b912-15"
+        },
+        {
+          "name": "Soft Gray",
+          "brand": "Nerolac",
+          "code": "NP-301",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-18"
+        }
+      ],
+      "techniques": "Use a neutral color to create a sense of continuity",
+      "maintenance": "Dust regularly with a soft cloth to maintain the finish"
+    },
+    {
+      "room_type": "bathroom_2",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Asian Paints",
+          "code": "AP-101",
+          "finish": "High-Gloss",
+          "cost_per_sqft": "\u20b925-30"
+        },
+        {
+          "name": "Fresh Mint",
+          "brand": "Dulux",
+          "code": "DLX-422",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a high-gloss finish on fixtures and a matte finish on walls",
+      "maintenance": "Clean regularly with a mild detergent to maintain the finish"
+    },
+    {
+      "room_type": "verandah",
+      "color_options": [
+        {
+          "name": "Weathered Wood",
+          "brand": "Berger",
+          "code": "BE-501",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Soft Green",
+          "brand": "Dulux",
+          "code": "DLX-522",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a durable, weather-resistant finish to withstand outdoor conditions",
+      "maintenance": "Clean regularly with a mild detergent to maintain the finish"
+    },
+    {
+      "room_type": "parking",
+      "color_options": [
+        {
+          "name": "Durable Gray",
+          "brand": "Asian Paints",
+          "code": "AP-301",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b910-12"
+        },
+        {
+          "name": "Functional White",
+          "brand": "Nerolac",
+          "code": "NP-101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b912-15"
+        }
+      ],
+      "techniques": "Use a durable, low-sheen finish to withstand heavy use",
+      "maintenance": "Clean regularly with a mild detergent to maintain the finish"
+    }
+  ],
+  "tips": [
+    "Always prime the walls before painting to ensure better adhesion and coverage",
+    "Use a roller to paint large areas and a brush for edges and corners",
+    "Clean up spills immediately to prevent stains and damage"
+  ]
+}

@@ -20,6 +20,14 @@ const nextConfig = {
     // Warning: This allows production builds to successfully complete even if
     // your project has type errors.
     ignoreBuildErrors: true,
+  },
+
+  // Disable font optimization to prevent Google Fonts issues
+  optimizeFonts: false,
+
+  // Disable image optimization to reduce build complexity
+  images: {
+    unoptimized: true
   }
 };
 

@@ -1,0 +1,319 @@
+{
+  "overall_theme": "Earthy and Calming with a touch of Modernity",
+  "rooms": [
+    {
+      "room_type": "living_room",
+      "color_options": [
+        {
+          "name": "Warm Beige",
+          "brand": "Asian Paints",
+          "code": "AP-W1050",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Soft Cream",
+          "brand": "Nerolac",
+          "code": "NP-1030",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b912-18"
+        },
+        {
+          "name": "Light Gray",
+          "brand": "Dulux",
+          "code": "DL-1010",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Textured finish on one accent wall to add depth",
+      "maintenance": "Regular dusting and occasional damp cloth cleaning"
+    },
+    {
+      "room_type": "dining_area",
+      "color_options": [
+        {
+          "name": "Creamy White",
+          "brand": "Asian Paints",
+          "code": "AP-CW100",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b912-18"
+        },
+        {
+          "name": "Soft Peach",
+          "brand": "Nerolac",
+          "code": "NP-SP102",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b910-15"
+        },
+        {
+          "name": "Light Beige",
+          "brand": "Berger Paints",
+          "code": "BP-LB101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        }
+      ],
+      "techniques": "None",
+      "maintenance": "Regular dusting and occasional damp cloth cleaning"
+    },
+    {
+      "room_type": "kitchen",
+      "color_options": [
+        {
+          "name": "Fresh Mint",
+          "brand": "Dulux",
+          "code": "DL-FM101",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b925-30"
+        },
+        {
+          "name": "Soft Sage",
+          "brand": "Asian Paints",
+          "code": "AP-SS100",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Creamy White",
+          "brand": "Nerolac",
+          "code": "NP-CW100",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b910-15"
+        }
+      ],
+      "techniques": "High-gloss finish on kitchen cabinets for easy cleaning",
+      "maintenance": "Regular cleaning with soap and water, occasional polishing"
+    },
+    {
+      "room_type": "utility_area",
+      "color_options": [
+        {
+          "name": "Light Gray",
+          "brand": "Dulux",
+          "code": "DL-LG101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "White",
+          "brand": "Asian Paints",
+          "code": "AP-W100",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b910-15"
+        },
+        {
+          "name": "Cream",
+          "brand": "Nerolac",
+          "code": "NP-C100",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b910-15"
+        }
+      ],
+      "techniques": "None",
+      "maintenance": "Regular dusting and occasional damp cloth cleaning"
+    },
+    {
+      "room_type": "bedroom",
+      "color_options": [
+        {
+          "name": "Soft Blue",
+          "brand": "Asian Paints",
+          "code": "AP-SB100",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Pale Lavender",
+          "brand": "Dulux",
+          "code": "DL-PL100",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Light Beige",
+          "brand": "Berger Paints",
+          "code": "BP-LB101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        }
+      ],
+      "techniques": "Accent wall with a subtle texture",
+      "maintenance": "Regular dusting and occasional damp cloth cleaning"
+    },
+    {
+      "room_type": "bathroom",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Nerolac",
+          "code": "NP-CW100",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Soft Gray",
+          "brand": "Dulux",
+          "code": "DL-SG101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Creamy White",
+          "brand": "Asian Paints",
+          "code": "AP-CW100",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b910-15"
+        }
+      ],
+      "techniques": "Water-resistant coating for added durability",
+      "maintenance": "Regular cleaning with soap and water, occasional disinfecting"
+    },
+    {
+      "room_type": "bedroom 2",
+      "color_options": [
+        {
+          "name": "Pastel Pink",
+          "brand": "Dulux",
+          "code": "DL-PP101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Light Beige",
+          "brand": "Berger Paints",
+          "code": "BP-LB101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Soft Peach",
+          "brand": "Nerolac",
+          "code": "NP-SP102",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b910-15"
+        }
+      ],
+      "techniques": "None",
+      "maintenance": "Regular dusting and occasional damp cloth cleaning"
+    },
+    {
+      "room_type": "hallway",
+      "color_options": [
+        {
+          "name": "Creamy White",
+          "brand": "Asian Paints",
+          "code": "AP-CW100",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b910-15"
+        },
+        {
+          "name": "Light Gray",
+          "brand": "Dulux",
+          "code": "DL-LG101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Soft Beige",
+          "brand": "Berger Paints",
+          "code": "BP-SB101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        }
+      ],
+      "techniques": "None",
+      "maintenance": "Regular dusting and occasional damp cloth cleaning"
+    },
+    {
+      "room_type": "bedroom 3",
+      "color_options": [
+        {
+          "name": "Soft Sage",
+          "brand": "Asian Paints",
+          "code": "AP-SS100",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Light Blue",
+          "brand": "Dulux",
+          "code": "DL-LB101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Cream",
+          "brand": "Nerolac",
+          "code": "NP-C100",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b910-15"
+        }
+      ],
+      "techniques": "Accent wall with a subtle texture",
+      "maintenance": "Regular dusting and occasional damp cloth cleaning"
+    },
+    {
+      "room_type": "bathroom 2 (common)",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Nerolac",
+          "code": "NP-CW100",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Soft Gray",
+          "brand": "Dulux",
+          "code": "DL-SG101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Creamy White",
+          "brand": "Asian Paints",
+          "code": "AP-CW100",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b910-15"
+        }
+      ],
+      "techniques": "Water-resistant coating for added durability",
+      "maintenance": "Regular cleaning with soap and water, occasional disinfecting"
+    },
+    {
+      "room_type": "verandah",
+      "color_options": [
+        {
+          "name": "Earth Brown",
+          "brand": "Berger Paints",
+          "code": "BP-EB101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-20"
+        },
+        {
+          "name": "Soft Green",
+          "brand": "Dulux",
+          "code": "DL-SG102",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Cream",
+          "brand": "Nerolac",
+          "code": "NP-C100",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b910-15"
+        }
+      ],
+      "techniques": "None",
+      "maintenance": "Regular dusting and occasional damp cloth cleaning"
+    }
+  ],
+  "tips": [
+    "Always choose a paint with a finish that suits the room's purpose and traffic",
+    "Consider the natural lighting in each room when selecting a color",
+    "Use a primer to ensure better paint adhesion and durability",
+    "Clean walls regularly to maintain the paint's appearance and longevity"
+  ]
+}
