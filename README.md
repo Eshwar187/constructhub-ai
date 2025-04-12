@@ -35,8 +35,8 @@ ConstructHub.ai is a next-gen full-stack web application for construction projec
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/constructhub.git
-   cd constructhub
+   git clone https://github.com/yourusername/constructhub-ai.git
+   cd constructhub-ai
    ```
 
 2. Install dependencies:
