@@ -36,10 +36,17 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       // Configure routing with absolute URLs for production
       signInUrl="/sign-in"
       signUpUrl="/sign-up"
-      afterSignInUrl="/dashboard"
+      afterSignInUrl="/redirect.html"
       afterSignUpUrl="/verification"
-      // Use our custom navigation handler to prevent unwanted redirects
-      navigate={customNavigate}
+      // Use a direct navigation handler that forces the correct redirect
+      navigate={(to) => {
+        // If the URL contains a JWT parameter, force redirect to our handler
+        if (typeof window !== 'undefined' && to.includes('__clerk_db_jwt')) {
+          window.location.href = `${window.location.origin}/redirect.html`;
+          return true;
+        }
+        return false; // Let Clerk handle normal navigation
+      }}
 
     >
       <UserSyncProvider>
