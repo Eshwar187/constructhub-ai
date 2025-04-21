@@ -14,12 +14,14 @@ export default function Home() {
     if (!isLoaded) return;
 
     // Check if there's a Clerk DB JWT parameter in the URL
-    const hasClerkDbJwt = window.location.search.includes('__clerk_db_jwt') ||
-                         window.location.search.includes('jwt');
+    const hasClerkDbJwt = window.location.search.includes('__clerk_db_jwt');
 
     if (hasClerkDbJwt) {
-      // Redirect to our special redirect handler
-      window.location.href = `${window.location.origin}/redirect.html`;
+      // Clean the URL by removing the JWT parameter
+      const cleanUrl = window.location.origin + '/dashboard';
+
+      // Redirect to dashboard directly
+      window.location.href = cleanUrl;
       return;
     }
 

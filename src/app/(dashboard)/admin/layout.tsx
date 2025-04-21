@@ -17,17 +17,20 @@ export default function AdminDashboardLayout({
   useEffect(() => {
     const checkAdminAuth = async () => {
       try {
-        const response = await fetch('/api/admin/auth');
+        // Use the new server-side API route to check admin authentication
+        const response = await fetch('/api/admin/check-auth');
         const data = await response.json();
 
         if (!response.ok || !data.authenticated) {
-          toast.error('Admin authentication required');
-          router.push('/admin/sign-in');
+          console.log('Admin authentication required');
+          // Use replace instead of push for a cleaner navigation experience
+          router.replace('/admin/sign-in');
         }
       } catch (error) {
         console.error('Error checking admin authentication:', error);
         toast.error('Authentication error');
-        router.push('/admin/sign-in');
+        // Use replace instead of push for a cleaner navigation experience
+        router.replace('/admin/sign-in');
       } finally {
         setIsLoading(false);
       }

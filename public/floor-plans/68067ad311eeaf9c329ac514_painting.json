@@ -1,0 +1,291 @@
+{
+  "overall_theme": "Nature-inspired, calming, and modern with a touch of Vaastu compliance",
+  "rooms": [
+    {
+      "room_type": "bedroom",
+      "color_options": [
+        {
+          "name": "Soothing Sage",
+          "brand": "Asian Paints",
+          "code": "AP-S2060",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Creamy White",
+          "brand": "Berger Paints",
+          "code": "BP-W101",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Light Grey",
+          "brand": "Dulux",
+          "code": "DLG-103",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a subtle texture to add depth to the walls",
+      "maintenance": "Dust walls regularly to maintain the matte finish"
+    },
+    {
+      "room_type": "bedroom 2",
+      "color_options": [
+        {
+          "name": "Pastel Pink",
+          "brand": "Nerolac",
+          "code": "NP-P201",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b912-15"
+        },
+        {
+          "name": "Minty Fresh",
+          "brand": "Asian Paints",
+          "code": "AP-M1050",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        },
+        {
+          "name": "Soft Peach",
+          "brand": "Berger Paints",
+          "code": "BP-P101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-18"
+        }
+      ],
+      "techniques": "Use a lighter shade on one wall to create a focal point",
+      "maintenance": "Clean walls gently with a damp cloth to avoid damaging the eggshell finish"
+    },
+    {
+      "room_type": "bedroom 3",
+      "color_options": [
+        {
+          "name": "Seafoam Green",
+          "brand": "Dulux",
+          "code": "DLG-205",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Creamy Beige",
+          "brand": "Nerolac",
+          "code": "NP-B201",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b912-15"
+        },
+        {
+          "name": "Light Lavender",
+          "brand": "Asian Paints",
+          "code": "AP-L1050",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        }
+      ],
+      "techniques": "Use a stencil to add a subtle pattern to the walls",
+      "maintenance": "Dust walls regularly to maintain the matte finish"
+    },
+    {
+      "room_type": "living room",
+      "color_options": [
+        {
+          "name": "Warm Beige",
+          "brand": "Berger Paints",
+          "code": "BP-B101",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Soft Cream",
+          "brand": "Dulux",
+          "code": "DLG-101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Light Grey",
+          "brand": "Nerolac",
+          "code": "NP-G201",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b912-15"
+        }
+      ],
+      "techniques": "Use a semi-gloss finish on the ceiling to reflect light",
+      "maintenance": "Clean walls gently with a damp cloth to avoid damaging the eggshell finish"
+    },
+    {
+      "room_type": "kitchen",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Asian Paints",
+          "code": "AP-W1050",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b925-30"
+        },
+        {
+          "name": "Soft Grey",
+          "brand": "Berger Paints",
+          "code": "BP-G101",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Dulux",
+          "code": "DLG-201",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a high-gloss finish to make the space feel larger",
+      "maintenance": "Clean walls regularly with a mild detergent to maintain the gloss finish"
+    },
+    {
+      "room_type": "dining area",
+      "color_options": [
+        {
+          "name": "Soft Gold",
+          "brand": "Nerolac",
+          "code": "NP-GD201",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b912-15"
+        },
+        {
+          "name": "Creamy White",
+          "brand": "Berger Paints",
+          "code": "BP-W101",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Light Brown",
+          "brand": "Dulux",
+          "code": "DLG-301",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a subtle texture to add depth to the walls",
+      "maintenance": "Dust walls regularly to maintain the matte finish"
+    },
+    {
+      "room_type": "bathroom",
+      "color_options": [
+        {
+          "name": "Fresh Mint",
+          "brand": "Asian Paints",
+          "code": "AP-M1050",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b925-30"
+        },
+        {
+          "name": "Soft Blue",
+          "brand": "Nerolac",
+          "code": "NP-B201",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b912-15"
+        },
+        {
+          "name": "White",
+          "brand": "Berger Paints",
+          "code": "BP-W101",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a high-gloss finish to make the space feel larger",
+      "maintenance": "Clean walls regularly with a mild detergent to maintain the gloss finish"
+    },
+    {
+      "room_type": "bathroom 2",
+      "color_options": [
+        {
+          "name": "Seafoam Green",
+          "brand": "Dulux",
+          "code": "DLG-205",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        },
+        {
+          "name": "Soft Peach",
+          "brand": "Nerolac",
+          "code": "NP-P201",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b912-15"
+        },
+        {
+          "name": "Light Lavender",
+          "brand": "Asian Paints",
+          "code": "AP-L1050",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b918-22"
+        }
+      ],
+      "techniques": "Use a stencil to add a subtle pattern to the walls",
+      "maintenance": "Dust walls regularly to maintain the matte finish"
+    },
+    {
+      "room_type": "utility",
+      "color_options": [
+        {
+          "name": "Crisp White",
+          "brand": "Asian Paints",
+          "code": "AP-W1050",
+          "finish": "Gloss",
+          "cost_per_sqft": "\u20b925-30"
+        },
+        {
+          "name": "Soft Grey",
+          "brand": "Berger Paints",
+          "code": "BP-G101",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Warm Beige",
+          "brand": "Dulux",
+          "code": "DLG-201",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a high-gloss finish to make the space feel larger",
+      "maintenance": "Clean walls regularly with a mild detergent to maintain the gloss finish"
+    },
+    {
+      "room_type": "balcony",
+      "color_options": [
+        {
+          "name": "Soft Green",
+          "brand": "Nerolac",
+          "code": "NP-G201",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b912-15"
+        },
+        {
+          "name": "Creamy White",
+          "brand": "Berger Paints",
+          "code": "BP-W101",
+          "finish": "Eggshell",
+          "cost_per_sqft": "\u20b915-18"
+        },
+        {
+          "name": "Light Brown",
+          "brand": "Dulux",
+          "code": "DLG-301",
+          "finish": "Matte",
+          "cost_per_sqft": "\u20b920-25"
+        }
+      ],
+      "techniques": "Use a subtle texture to add depth to the walls",
+      "maintenance": "Dust walls regularly to maintain the matte finish"
+    }
+  ],
+  "tips": [
+    "Always prime the walls before painting to ensure better adhesion and coverage",
+    "Use a roller to paint large areas and a brush for edges and corners",
+    "Apply two coats of paint for optimal coverage and color consistency",
+    "Clean walls regularly to maintain the finish and extend the life of the paint"
+  ]
+}

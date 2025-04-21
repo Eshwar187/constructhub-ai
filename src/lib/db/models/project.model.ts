@@ -69,6 +69,15 @@ const ProjectSchema = new Schema<IProject>(
   { timestamps: true }
 );
 
-const Project = mongoose.models.Project as Model<IProject> || mongoose.model<IProject>('Project', ProjectSchema);
+// Use a safe pattern for model initialization that works in all environments
+let Project: Model<IProject>;
+
+// Check if the model already exists to prevent model overwrite errors
+if (mongoose.models && mongoose.models.Project) {
+  Project = mongoose.models.Project as Model<IProject>;
+} else {
+  // Create the model if it doesn't exist
+  Project = mongoose.model<IProject>('Project', ProjectSchema);
+}
 
 export default Project;

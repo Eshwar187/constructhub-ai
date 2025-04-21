@@ -27,10 +27,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        {/* Add the fix-redirect script to every page */}
-        <script src="/fix-redirect.js" async></script>
-      </head>
       <body
         className={`${fontVariables.variable} antialiased min-h-screen bg-background text-foreground`}
       >

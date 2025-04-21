@@ -1,8 +1,9 @@
 import { authMiddleware } from '@clerk/nextjs';
 import { NextRequest, NextResponse } from 'next/server';
 import { handleClerkRedirects } from './middleware-utils';
+import { adminMiddleware } from './middleware-admin';
 
-// Create a custom middleware function that first checks for Clerk redirects
+// Create a custom middleware function that handles various middleware functions
 const customMiddleware = (req: NextRequest) => {
   // Check if we need to handle a Clerk redirect
   const redirectResponse = handleClerkRedirects(req);
@@ -10,7 +11,13 @@ const customMiddleware = (req: NextRequest) => {
     return redirectResponse;
   }
 
-  // Otherwise, proceed with Clerk's auth middleware
+  // Check if this is an admin dashboard route
+  if (req.nextUrl.pathname.startsWith('/admin/dashboard')) {
+    // Use our custom admin middleware for admin routes
+    return adminMiddleware(req);
+  }
+
+  // For non-admin routes, proceed with Clerk's auth middleware
   return authMiddleware({
     // Custom function to handle requests
     beforeAuth: (req) => {
@@ -46,6 +53,8 @@ const customMiddleware = (req: NextRequest) => {
     '/admin/register',
     '/admin/pending-approval',
     '/admin/approved',
+    '/admin/dashboard',       // Allow access to admin dashboard
+    '/admin/dashboard/:path*', // Allow access to all admin dashboard routes
     '/api/db/ping',
     '/api/db/init',
     '/api/db/startup',
@@ -57,9 +66,9 @@ const customMiddleware = (req: NextRequest) => {
     '/api/admin/users',      // Allow access to admin users endpoint
     '/api/admin/users/:id',  // Allow access to admin user operations by ID
     '/api/admin/activities', // Allow access to admin activities endpoint
-    '/api/auth/redirect',  // Allow access to auth redirect API
-    '/projects/:id',  // Allow access to individual project pages
-    '/projects/:path*',  // Allow access to all project routes
+    '/api/auth/redirect',    // Allow access to auth redirect API
+    '/projects/:id',         // Allow access to individual project pages
+    '/projects/:path*',      // Allow access to all project routes
   ],
   // Routes that can always be accessed, and have
   // no authentication information

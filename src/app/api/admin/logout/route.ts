@@ -43,7 +43,9 @@ export async function POST(req: Request) {
       { status: 200 }
     );
 
+    // Delete both admin cookies
     response.cookies.delete('admin_session');
+    response.cookies.delete('admin_authenticated');
 
     return response;
   } catch (error) {

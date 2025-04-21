@@ -35,7 +35,8 @@ export default function AdminSignInPage(): React.ReactElement {
       }
 
       toast.success('Signed in successfully');
-      router.push('/admin/dashboard');
+      // Use replace instead of push for a cleaner navigation experience
+      router.replace('/admin/dashboard');
     } catch (error) {
       toast.error(error instanceof Error ? error.message : 'Failed to sign in');
     } finally {

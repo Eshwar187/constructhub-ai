@@ -31,6 +31,15 @@ const UserSchema = new Schema<IUser>(
   { timestamps: true }
 );
 
-const User = mongoose.models.User || mongoose.model<IUser>('User', UserSchema);
+// Use a safe pattern for model initialization that works in all environments
+let User: Model<IUser>;
+
+// Check if the model already exists to prevent model overwrite errors
+if (mongoose.models && mongoose.models.User) {
+  User = mongoose.models.User as Model<IUser>;
+} else {
+  // Create the model if it doesn't exist
+  User = mongoose.model<IUser>('User', UserSchema);
+}
 
 export default User;

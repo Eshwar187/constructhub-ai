@@ -66,6 +66,14 @@ export async function POST(req: Request) {
       path: '/',
     });
 
+    // Set the admin_authenticated cookie for redirect logic
+    cookieStore.set('admin_authenticated', 'true', {
+      httpOnly: false, // Allow JavaScript to read this cookie
+      secure: process.env.NODE_ENV === 'production',
+      maxAge: 60 * 60 * 24, // 24 hours
+      path: '/',
+    });
+
     // Store the session token in the database
     adminUser.sessionToken = sessionToken;
     adminUser.sessionExpiry = new Date(Date.now() + 1000 * 60 * 60 * 24); // 24 hours
